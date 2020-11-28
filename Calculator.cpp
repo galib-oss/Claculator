@@ -2,9 +2,15 @@
 #include <math.h>
 int main(){
 
-    printf("Hello Welcome to Galib's Calculator\n");
+    
+    printf(" / ____|     | (_) |   ( )      / ____|    | |          | |     | |           \n");
+    printf("| |  __  __ _| |_| |__ |/ ___  | |     __ _| | ___ _   _| | __ _| |_ ___  _ __\n");
+    printf("| | |_ |/ _` | | | '_ \  / __| | |    / _` | |/ __| | | | |/ _` | __/ _ \| '__|\n");
+    printf("| |__| | (_| | | | |_) | \__ \ | |___| (_| | | (__| |_| | | (_| | || (_) | |   \n");
+    printf(" \_____|\__,_|_|_|_.__/  |___/  \_____\__,_|_|\___|\__,_|_|\__,_|\__\___/|_|   \n");
     long long int num1, num2, num3,x;
     x = 100;
+
     do {
         printf("Choose your function\n");
         printf("1.addition\n2.Substraction\n3.Multiplication\n4.Division\n5.Square\n6.Root\n7.Power\n");
@@ -45,7 +51,7 @@ int main(){
     }
 
     else if (x == 6){
-        printf("Insert one number asd:");
+        printf("Insert one number :");
         scanf("%lld",&num1);
         printf("Root of the number is: %lf\n",sqrt(num1));
     }
