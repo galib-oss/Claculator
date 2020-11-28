@@ -17,7 +17,7 @@ int main(){
         printf("Enter your choice :");
         scanf("%lld",&x);
 
-    } while(x < 1 or x > 7);
+    } while(x < 1 or x > 8);
 
 
     if (x == 1){
@@ -56,14 +56,26 @@ int main(){
         printf("Root of the number is: %lf\n",sqrt(num1));
     }
 
-     else if (x == 7){
+    else if (x == 7){
+        printf("Insert one number and the power :");
+        scanf("%lld",&num1,&num2);
+        long long int ans = 1;
+        for (int i = 1; i <= num2;i++){
+            ans *= num1;
+        }
+        printf("The answer is: %lf\n",ans);
+    }
+
+    
+     else if (x == 8){
         printf("Insert one number :");
         scanf("%lld",&num1);
         long long ans = 1;
-        for (int i = 1; i <= num1; i++) ans *= i;
+        for (int i = 1; i <= num1; i++){ 
+            ans *= i;
+        }
         printf("Factorial of the number is: %lld\n", ans);
     }
-
 
     return 0;
 }
