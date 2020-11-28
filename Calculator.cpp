@@ -13,7 +13,7 @@ int main(){
 
     do {
         printf("Choose your function\n");
-        printf("1.addition\n2.Substraction\n3.Multiplication\n4.Division\n5.Square\n6.Root\n7.Power\n");
+        printf("1.addition\n2.Substraction\n3.Multiplication\n4.Division\n5.Square\n6.Root\n7.Power\n8.Factorial\n");
         printf("Enter your choice :");
         scanf("%lld",&x);
 
@@ -56,6 +56,13 @@ int main(){
         printf("Root of the number is: %lf\n",sqrt(num1));
     }
 
+     else if (x == 7){
+        printf("Insert one number :");
+        scanf("%lld",&num1);
+        long long ans = 1;
+        for (int i = 1; i <= num1; i++) ans *= i;
+        printf("Factorial of the number is: %lld\n", ans);
+    }
 
 
     return 0;
