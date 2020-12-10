@@ -16,7 +16,7 @@ int main(){
 
     do {
         printf(" Choose your function\n");
-        printf(" 1.addition\n 2.Substraction\n 3.Multiplication\n 4.Division\n 5.Square\n 6.Root\n 7.Power\n 8.Factorial\n");
+        printf(" 1.Addition\n 2.Substraction\n 3.Multiplication\n 4.Division\n 5.Square\n 6.Root\n 7.Power\n 8.Factorial\n");
         printf(" Enter your choice :");
         scanf("%lld",&x);
 
